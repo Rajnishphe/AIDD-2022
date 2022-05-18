@@ -1,0 +1,10 @@
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+center_x = 9.083
+center_y = -0.000
+center_z = 22.722
+size_x = 26
+size_y = 26
+size_z = 26
+exhaustiveness = 8
+out = ligand_vinaout.pdbqt
