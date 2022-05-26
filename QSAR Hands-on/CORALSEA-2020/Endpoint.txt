@@ -1,0 +1,8 @@
+ Average Defect SMILES (ADS)) = 5.5890
+ SMILES that has Defect less than 11.1779 falls in Domain of applicability
+73	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cccc2)Cl)C1=C(NC2C1=CC=CC2)Cl)c1ccc(cc1)Cl	  :  5.0707:      1.7049: Non-outlier:
+74	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cc(cc2)Cl)Cl)C1=C(NC2C1=C(C=CC2)Cl)Cl)c1ccccc1  :  4.9432:      1.6574: Non-outlier:
+75	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1ccc(cc1)Cl  :  5.0954:      1.7592: Non-outlier:
+76	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1cc(c(cc1)Cl)C  :  5.0439:      1.7791: Non-outlier:
+77	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cccc2)Br)C1=C(NC2C1=CC=CC2)Br)c1ccc(cc1)Br  :  5.3916:     13.7049: Outlier    :
+78	c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1cc(ccc1)F  :  5.1067:      5.7592: Non-outlier:

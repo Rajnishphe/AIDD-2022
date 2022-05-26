@@ -1,0 +1,52 @@
+This file contains prediction for the invisible validation set
+
+Data taken from file #ValidationSet.txt
+
+The average of DefectSMILES =     5.58897
+Substance falls into domain of applicability if DefectSMILES <     11.17794
+
+Rm2(x,y) calculation for validation set from input file
+n           =       6
+r2          =    0.8370
+r02         =   -0.2736
+rr02        =    0.6713
+(r2-r02)/r2 =    1.3269 should be < 0.1
+(r2-rr02)/r2=    0.1980 should be < 0.1
+k           =    1.0358 should be 0.85 <  k < 1.15
+kk          =    0.9650 should be 0.85 < kk < 1.15
+Rm2(test)   =   -0.0451 should be > 0.5
+
+
+Rm2(y,x) calculation for validation set from input file
+n           =       6
+r2          =    0.8370
+r02         =    0.6713
+rr02        =   -0.2736
+(r2-r02)/r2 =    0.1980 should be < 0.1
+(r2-rr02)/r2=    1.3269 should be < 0.1
+k           =    0.9650 should be 0.85 <  k < 1.15
+kk          =    1.0358 should be 0.85 < kk < 1.15
+R*m2(test)  =    0.4963 should be > 0.5
+
+Average Rm2 = 0.2256 should be larger 0.5
+Delta Rm2 = 0.5414 should be lower 0.2
+
+IIC(validation)             =   0.9149
+CII(validation)             =   0.7889
+RMSE(validation)            =   0.2110
+MAE(validation)             =   0.1682
+CCC(validation)             =   0.4213
+Y-randomization(validation) =   0.2606
+q2(validation)              =   0.3735
+
+The number of active (not blocked) attributes      =124
+
+Set:        CAS  :SMILES                                                                                                                      :  DCW       :  Expr      :  Calc      : Expr-Calc  :DefectSMILES: Applicability 
+*:              1:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)Br)Br                                                                            :    38.26489:      4.7910:      4.9244:     -0.1334:      8.6863:    YES   
+*:             14:c1(cccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1c(ccc2)C)C                                                                              :    30.49981:      4.3480:      4.6412:     -0.2932:      0.7706:    YES   
+*:             15:c1(cccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1c(ccc2)C#N)C#N                                                                          :    32.47554:      4.4730:      4.7133:     -0.2403:      0.8277:    YES   
+*:             16:c1cccc2c1/C(=N\OCc1ccccc1)/C(=N2)c1c[nH]c2c1cccc2                                                                           :    34.61421:      4.7130:      4.7913:     -0.0783:      2.6767:    YES   
+*:             42:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cc(cc2)[N+](=O)[O])C)C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1cc(c(OC)OC)OC              :    32.97458:      4.4990:      4.7315:     -0.2325:      4.2324:    YES   
+*:             64:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)F)C1=CNC2C1=CC(=CC2)F)c1cc(c(c(c1)OC)OC)OC                                 :    34.93074:      4.7710:      4.8028:     -0.0318:     13.0638:          No
+
+The number of outliers is 1

@@ -1,0 +1,40 @@
+This file contains values for statistical characteristics which were obtained
+in 1 probes of the Monte Carlo optimization
+SMILES taken from file #TrainingSet.txt
+Method taken from file Method.txt
+
+SMILES is used in this model
+
+The n is the number of compounds in set;
+The r is Correlation coefficient;
+The s is standard error of estimation;
+The F is Fischer F-ratio.
+The ns, r2s, ss, and Fs are statistical characteristics of training set.
+The nc, r2c, sc, and Fc are statistical characteristics of invisible training set.
+The nt, r2t, st, and Ft are statistical characteristics of calibration set.
+The Rm2 metric should be > 0.5 [1]
+[1] PK Ojha,I Mitra, RN Das,K Roy,Chemometr Intell Lab 107(2011)194-205]
+The number of epochs of optimization is 5
+The number of probes of optimization is 1
+The threshold (Thrshd) from 4 to 4
+Start step of the optimization is 0.5*CW(SA)
+Precision of the optimization is 0.1*CW(SA)
+CW(SA) is weight of SA at the start
+
+Model 
+Involves from SMILES:
+S(k)
+SS(k)
+SSS(k)
+NOSP
+HALO
+BOND
+HARD
+Balance of correlations i.e. Training-Invisible training-Calibration system
+The dr-weight is 0.1
+
+
+
+Trshd:Nact :Probe:  ns :         rs2:       ss :    fs :  nc :         rc2:       sc :    fc :  nt :         rt2:       st :    ft :    Rm2
+    4:  124:    1:   29:      0.4515:     0.211:     22:   29:      0.3052:     0.241:     12:    7:      0.8362:     0.246:     26:      0.4072
+    4:     :     :     :      0.4515:     0.211:     22:     :      0.3052:     0.241:     12:     :      0.8362:     0.246:     26:      0.4072

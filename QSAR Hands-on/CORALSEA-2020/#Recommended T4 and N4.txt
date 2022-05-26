@@ -1,0 +1,2 @@
+The search for the best correlation coefficient (R2) for the calibration set:
+Preferable threshold T*=4  Preferable average number of epochs   N*=  4.0   Average R2   for calibration set =   0.8443

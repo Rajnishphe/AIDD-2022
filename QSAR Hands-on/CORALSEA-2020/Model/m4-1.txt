@@ -1,0 +1,201 @@
+This file contains experimental and calculated values of the endpoint for visible sets
+
+
+
+SMILES is used in the model
+
+Data from SMILES-file (#TrainingSet.txt)
+Threshold=4
+The number of active SMILES attributes (ASA) =124
+
+Index of ideality of correlation (IIC) has been involved
+for the Monte Carlo optimization, IIC-weight = 0.5000)
+IIC style is 0
+
+CORRELATION BALANCE is used
+
+Sk are used
+SSk are used
+SSSk are used
+BOND is used
+NOSP is used
+HALO is used
+HARD is used
+
+
+
+
+IMPORTANT: In the case of classic scheme W%=N101/Nall, otherwise W%=N111/Nall
+Percent of ASA with presence in all sets (W%) =80
+
+Defect of Split = 19.2722
+
+Intercept (c0) and slope (c1) calculated for each set individually:
+Training set   : c0=   3.52875 c1=   0.03647
+InvTraining set: c0=   3.58774 c1=   0.03360
+Calibration set: c0=   1.85447 c1=   0.08189
+
+Slope and intesept calculated with training set give the model:
+
+Endpoint =   3.5287502 (± 0.0646724) +    0.0364740 (± 0.0019680) * DCW(4,5)
+
+Statistical characteristics of the model:
+
+N is the number of compounds in the set;
+R is correlation coefficient;
+Q is cross-validated correlation coefficient;
+CCC is concordance correlation coefficient;
+IIC is index of ideality of correlation;
+CII is correlation intensity index;
+s is standard error of estimation;
+MAE is mean absolute error;
+F is Fischer F-ratio
+
+Blk is the number of SMILES attributes in given SMILES, which are blocked
+All is the number of all SMILES attributes in given SMILES string
+
+Y-randomization: 1000 permutations for each average
+The randomized correlation coefficients are not constants,
+but they have some range, as rule, about ±0.03. 
+
+                                 :ActivTRN:Pass TRN:  CLB  
+                                 :      29:      29:       7
+                                 :  0.4515:  0.3052:  0.8362
+                                1:  0.1103:  0.0097:  0.0033
+                                2:  0.0469:  0.0096:  0.3496
+                                3:  0.0738:  0.0011:  0.0886
+                                4:  0.3099:  0.0101:  0.5447
+                                5:  0.0190:  0.0030:  0.2566
+                                6:  0.0167:  0.0019:  0.5088
+                                7:  0.0035:  0.0127:  0.1675
+                                8:  0.0285:  0.0898:  0.3002
+                                9:  0.0001:  0.0071:  0.7139
+                               10:  0.0988:  0.2467:  0.1730
+Rr2, i.e. average randomized R   :  0.0708:  0.0392:  0.3106
+   CRp2=R*sqrt(R2-Rr2) [1]       :  0.4147:  0.2849:  0.6629:
+
+ CRp2 should be greater 0.5 [1]
+
+REFERENCE for Y-scrambling
+[1] P.K. Ojha, K. Roy, Comparative QSARs for antimalarial endochins:
+    Importance of descriptor-thinning and noise reduction prior to
+     feature selection, Chemometr. Intell. Lab. 109 (2011) 146-161
+
+External validation characteristics for the model taken from
+REFERNCES
+[1] Golbraikh A., Tropsha A. J.Mol.Graph.Model. 20(2002)269; // R02, k,kk
+[2] Roy P.P., Roy K. Chem. Biol. Drug Des. 73(2009) 442; // Rm2
+[3] PK Ojha,I Mitra, RN Das,K Roy,Chemometr Intell Lab 107(2011)194-205
+    // Average of Rm2 and absolute difference Rm2(x,y)-Rm2(y,x)
+    // x,y are experimental and predicted values of endpoint
+[4] I-Kuei Lin, L. A concordance correlation coefficient to
+    evaluate reproducibility (1989) Biometrics, 45 (1), 255-268.
+[5] Toropova, A.P.,Toropov, A.A. The index of ideality of correlation:
+    A criterion of predictability of QSAR models for skin permeability?
+    (2017) Science of the Total Environment, 586, 466-472.
+
+The range of endpoint:
+Min=  4.2 Max=  5.7 Middle=  4.9
+
+n           =       7
+r2          =    0.8362
+r02         =   -1.6421
+rr02        =    0.5730
+(r2-r02)/r2 =    0.0000 should be < 0.1 [1]
+(r2-rr02)/r2=    0.0000 should be < 0.1 [1]
+k           =    1.0120 should be 0.85 <  k < 1.15 [1]
+kk          =    0.9861 should be 0.85 < kk < 1.15 [1]
+Rm2(test)   =   -0.4802 should be > 0.5 [2]
+
+n           =       7
+r2          =    0.8362
+r02         =    0.5730
+rr02        =   -1.6421
+(r2-r02)/r2 =    0.0000 should be < 0.1 [1]
+(r2-rr02)/r2=    0.0000 should be < 0.1 [1]
+k           =    0.9861 should be 0.85 <  k < 1.15 [1]
+kk          =    1.0120 should be 0.85 < kk < 1.15 [1]
+R*m2(test)  =    0.4072 should be > 0.5 [2]
+
+Average Rm2 =-0.0365 should be larger 0.5 [3]
+Delta Rm2 = 0.8874 should be lower 0.2 [3]
+
+        :  n :  R2   :  CCC  :  IIC  :  CII  :  Q2   :  Q2F1 :  Q2F2 :  Q2F3 : <Rm2> :  RMSE  :    MAE :  F     
+ActivTRN:  29: 0.4515: 0.6222: 0.6272: 0.6637: 0.3404:       :       :       :       :   0.211:   0.147:       22
+Pass TRN:  29: 0.3052: 0.4768: 0.4325: 0.7884: 0.1648:       :       :       :       :   0.241:   0.178:       12
+Calib   :   7: 0.8362: 0.6144: 0.9144: 0.8295: 0.5963: 0.5529: 0.5326: 0.3391:-0.0365:   0.246:   0.167:       26
+
+Training set is indicated by    +;
+Invisisble training set is indicated by -;
+Calibration set is indicated by #
+
+B a l a n c e   o f   c o r r e l a t i o n s :
+    Active training set - Passive training set - Calibration set
+
+DefectSMILES should be less than 2 x Average Defect SMILES =      11.1779
+ :SMILES                                                                                                      :    DCW(4,5):        Expr:        Calc:DefectSMILES: Dom.Applic.:   Expr-Calc:Blk/All: ID 
++:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)F)F                                                              :    34.75179:      4.9220:      4.7963:     11.6863: Outlier    :      0.1257:  0/126: 2
++:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)OC)OC                                                            :    31.83591:      5.2150:      4.6899:      0.8964: Non-outlier:      0.5251:  2/133: 4
++:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)[N+](=O)[O-])[N+](=O)[O-]                                        :    35.62383:      4.9810:      4.8281:      4.8642: Non-outlier:      0.1529:  0/139: 8
++:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)C#N)C#N                                                          :    32.33942:      4.8260:      4.7083:      0.8115: Non-outlier:      0.1177:  1/138: 9
++:c1ccc(c2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cccc2C)C                                                                :    29.89121:      4.7560:      4.6190:      1.7530: Non-outlier:      0.1370:  0/120: 13
++:c1c(ccc2c1/C(=N\OCc1ccccc1)/C(=N2)c1c[nH]c2c1cc(cc2)C#N)C#N                                                 :    34.20791:      4.8480:      4.7764:      2.7859: Non-outlier:      0.0716:  2/165: 18
++:c1cc(cc2c1/C(=N\OCc1ccccc1)/C(=N2)c1c[nH]c2c1ccc(c2)F)F                                                     :    35.77659:      4.8040:      4.8337:     13.6706: Outlier    :     -0.0297:  1/153: 19
++:c1c(ccc2c1/C(=N\OCc1ccc(cc1)C)/C(=N2)c1c[nH]c2c1cc(cc2)F)F                                                  :    34.47777:      4.8670:      4.7863:     13.6922: Outlier    :      0.0807:  1/162: 21
++:c1c(ccc2c1/C(=N\OCc1ccc(cc1)C)/C(=N2)c1c[nH]c2c1cc(cc2)Br)Br                                                :    37.99086:      4.8770:      4.9144:     10.6922: Non-outlier:     -0.0374:  4/162: 22
++:c1cccc2c1/C(=N\OCc1ccc(cc1)F)/C(=N2)c1c[nH]c2c1cccc2                                                        :    32.67717:      4.5680:      4.7206:      9.6529: Non-outlier:     -0.1526:  1/145: 23
++:c1c(ccc2c1/C(=N\OCc1ccc(cc1)C(F)(F)F)/C(=N2)c1c[nH]c2c1cc(cc2)Br)Br                                         :    40.07833:      5.0730:      4.9906:     23.6922: Outlier    :      0.0824:  6/183: 25
++:c1ccc(c2c1/C(=N\OCc1cc(ccc1)F)/C(=N2)c1c[nH]c2c1cccc2C)C                                                    :    29.82267:      4.6330:      4.6165:     10.7036: Non-outlier:      0.0165:  1/156: 26
++:c1c(ccc2c1/C(=N\OCc1cc(ccc1)Cl)/C(=N2)c1c[nH]c2c1cc(cc2)Br)Br                                               :    38.40245:      4.8880:      4.9294:     10.6655: Non-outlier:     -0.0414:  5/162: 27
++:c1ccc(c2c1/C(=N\OCc1cc(ccc1)Cl)/C(=N2)c1c[nH]c2c1cccc2C)C                                                   :    29.82856:      4.4960:      4.6167:      3.7036: Non-outlier:     -0.1207:  4/156: 28
++:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)C)C                                                              :    30.36369:      4.5930:      4.6362:      0.7544: Non-outlier:     -0.0432:  0/126: 32
++:c1cccc2c1/C(=N\OCCCC)/C(=N2)c1c[nH]c2c1cccc2                                                                :    24.76012:      4.4310:      4.4319:      1.7237: Non-outlier:     -0.0009:  4/121: 33
++:c1cccc2c1/C(=N\OC1CC1)/C(=N2)c1c[nH]c2c1cccc2                                                               :    26.03501:      4.4350:      4.4784:      1.7191: Non-outlier:     -0.0434:  4/124: 34
++:c1cc2c(cc1)c(c([nH]2)C(c1cc2c([nH]1)cccc2CCNS(=O)(=O)c1ccc(cc1)OC)c1c(cccc1)O)CCNS(=O)(=O)c1ccc(cc1)OC      :    34.44337:      4.3270:      4.7850:      0.9451: Non-outlier:     -0.4580:  4/281: 36
++:c1cc2c(cc1)c(c([nH]2)C(c1cc2c([nH]1)cccc2CCNS(=O)(=O)c1ccc(cc1)Cl)c1c(cccc1)O)CCNS(=O)(=O)c1ccc(cc1)Cl      :    35.87803:      5.0580:      4.8374:      0.7522: Non-outlier:      0.2206:  6/274: 37
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)Br)C1=CNC2C1=CC(=CC2)Br)c1ccc(cc1)C                        :    45.81191:      5.6000:      5.1997:     11.7433: Outlier    :      0.4003:  4/220: 46
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)C#N)C1=CNC2C1=CC(=CC2)C#N)c1ccc(cc01)C                     :    38.07802:      4.9570:      4.9176:      1.9163: Non-outlier:      0.0394:  8/235: 49
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cc(cc2)[N+](=O)[O])C)C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(c      :    35.83409:      4.9330:      4.8358:      3.9269: Non-outlier:      0.0972:  1/227: 51
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)[N+](=O)[O])C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(cc1)      :    39.33453:      4.9810:      4.9634:      3.9128: Non-outlier:      0.0176:  1/227: 53
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)C#N)C1=CNC2C1=CC(=CC2)C#N)c1ccc(cc1)OC                     :    35.34438:      4.8630:      4.8179:      0.9819: Non-outlier:      0.0451:  2/236: 54
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cc(cc2)[N+](=O)[O])C)C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(cc1)F  :    37.02367:      4.7300:      4.8792:      9.9016: Non-outlier:     -0.1492:  1/239: 58
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)C#N)C1=CNC2C1=CC(=CC2)C#N)c1ccc(cc1)F                      :    38.46896:      4.8040:      4.9319:      6.8851: Non-outlier:     -0.1279:  2/232: 60
++:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)F)C1=CNC2C1=CC(=CC2)F)c1ccc(cc1)F                          :    39.93880:      4.7320:      4.9855:     16.7305: Outlier    :     -0.2535:  2/220: 62
++:c1ccc2c(c1)c(cn2C)CC1CN(CC(C1=O)Cc1cn(c2c1cccc2)C)C(=O)OCC                                                  :    21.51263:      4.1750:      4.3134:      1.8098: Non-outlier:     -0.1384: 11/177: 68
++:c1ccc2c(c1)c(cn2Cc1c(cccc1)F)CC1CN(CC(C1=O)Cc1cn(c2c1cccc2)Cc1ccccc1F)C(=O)OCC                              :    42.24379:      4.5360:      5.0696:      9.8037: Non-outlier:     -0.5336: 16/237: 69
+-:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)Oc1ccccc1)Oc1ccccc1                                              :    47.13748:      4.7100:      5.2480:      0.7748: Non-outlier:     -0.5380:  7/175: 5
+-:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)N)N                                                              :    35.08713:      4.8290:      4.8085:      0.7711: Non-outlier:      0.0205:  3/126: 6
+-:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)NC(=O)C)NC(=O)C                                                  :    36.61698:      4.6590:      4.8643:      1.0570: Non-outlier:     -0.2053:  5/162: 7
+-:c1c(ccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cc(cc2)C(=O)OC)C(=O)OC                                                  :    31.92712:      4.6880:      4.6933:      1.0903: Non-outlier:     -0.0053:  3/163: 10
+-:c1cc(cc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1ccc(c2)F)F                                                              :    33.90810:      4.6720:      4.7655:     11.6961: Outlier    :     -0.0935:  0/126: 11
+-:c1cc(cc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1ccc(c2)C(=O)OC)C(=O)OC                                                  :    31.08342:      4.5860:      4.6625:      1.1001: Non-outlier:     -0.0765:  3/163: 12
+-:c1c(ccc2c1/C(=N\OCc1ccccc1)/C(=N2)c1c[nH]c2c1cc(cc2)F)F                                                     :    36.62029:      4.9770:      4.8644:     13.6608: Outlier    :      0.1126:  1/153: 17
+-:c1cccc2c1/C(=N\OCc1ccc(cc1)C)/C(=N2)c1c[nH]c2c1cccc2                                                        :    32.47169:      4.6480:      4.7131:      2.7081: Non-outlier:     -0.0651:  1/145: 20
+-:c1cccc2c1/C(=N\OCc1ccc(cc1)C(F)(F)F)/C(=N2)c1c[nH]c2c1cccc2                                                 :    34.21961:      4.5680:      4.7769:     17.6796: Outlier    :     -0.2089:  3/166: 24
+-:c1cccc2c1/C(=N\OCc1c(cc(cc1)F)Cl)/C(=N2)c1c[nH]c2c1cccc2                                                    :    31.83849:      4.6690:      4.6900:      7.6604: Non-outlier:     -0.0210:  5/154: 29
+-:c1c(ccc2c1/C(=N\OCc1c(cc(cc1)F)Cl)/C(=N2)c1c[nH]c2c1cc(cc2)OC)OC                                            :    30.92869:      4.7190:      4.6568:      7.8546: Non-outlier:      0.0622:  7/178: 30
+-:c1cc2c(cc1)c(c([nH]2)C(c1cc2c([nH]1)cccc2CCNS(=O)(=O)c1ccc(cc1)Cl)c1ccc(cc1)O)CCNS(=O)(=O)c1ccc(cc1)Cl      :    35.12511:      4.9060:      4.8099:      0.7494: Non-outlier:      0.0961:  6/274: 39
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)Br)C1=CNC2C1=CC(=CC2)Br)c1cc(c(c(c1)OC)OC)OC               :    41.16557:      4.6600:      5.0302:     11.0638: Non-outlier:     -0.3702:  6/248: 40
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1cc(c(c(c1)OC)OC)OC                       :    38.59281:      4.6440:      4.9364:      1.1210: Non-outlier:     -0.2924:  3/230: 41
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)[N+](=O)[O])C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1cc(c(c(cOC)OC~:    35.41329:      4.7670:      4.8204:      4.0603: Non-outlier:     -0.0534:  5/243: 43
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1ccc(cc1)C                                :    43.54695:      5.0000:      5.1171:      1.7907: Non-outlier:     -0.1171:  2/202: 45
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c([nH]c2c1cc(cc2)[N+](=O)[O])C)C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(cc1)C  :    37.05977:      4.6750:      4.8805:      3.9430: Non-outlier:     -0.2055:  1/239: 47
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)[N+](=O)[O])C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(cc1)C     :    38.92120:      5.1590:      4.9484:      3.9240: Non-outlier:      0.2106:  1/230: 48
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)Br)C1=CNC2C1=CC(=CC2)Br)c1ccc(cc1)OC                       :    42.40170:      5.0340:      5.0753:     10.8085: Non-outlier:     -0.0413:  4/224: 52
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)F)C1=CNC2C1=CC(=CC2)F)c1ccc(cc1)OC                         :    36.16687:      4.5590:      4.8479:     12.8085: Outlier    :     -0.2889:  1/224: 55
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1ccc(cc1)Cl                               :    42.95166:      5.6900:      5.0954:      1.7592: Non-outlier:      0.5946:  3/202: 57
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)[N+](=O)[O])C1=CNC2C1=CC(=CC2)[N+](=O)[O-])c1ccc(cc1)      :    39.33453:      5.1990:      4.9634:      3.9128: Non-outlier:      0.2356:  1/227: 59
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)Br)C1=CNC2C1=CC(=CC2)Br)c1ccc(cc1)F                        :    46.11535:      5.0800:      5.2108:     15.7305: Outlier    :     -0.1308:  4/220: 61
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)OC)C1=CNC2C1=CC(=CC2)OC)c1ccc(cc1)F                        :    34.55976:      4.8370:      4.7893:      6.9074: Non-outlier:      0.0477:  4/226: 63
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)OC)C1=CNC2C1=CC(=CC2)OC)c1cc(c(c(c1)OC)OC)OC               :    32.37144:      4.6890:      4.7095:      1.2665: Non-outlier:     -0.0205:  6/254: 65
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)F)C1=CNC2C1=CC(=C2)F)c1ccc(cc1)C                           :    39.56368:      4.8480:      4.9718:     12.6860: Outlier    :     -0.1238:  3/217: 66
+-:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)OC)C1=CNC2C1=CC(CC2)OC)c1ccc(cc1)C                         :    31.47555:      4.5200:      4.6768:      0.9126: Non-outlier:     -0.1568:  4/223: 67
+-:c1ccc2c(c1)c(cn2Cc1ccccc1Cl)CC1CN(CC(C1=O)Cc1cn(c2c1cccc2)Cc1c(cccc1)Cl)C(=O)OCC                            :    41.75003:      5.5600:      5.0515:      0.8037: Non-outlier:      0.5085: 21/237: 70
+-:c1ccc2c(c1)c(cn2Cc1ccc(cc1)[N+](=O)[O])CC1CN(CC(C1=O)Cc1cn(c2c1cccc2)Cc1ccc(cc1)[N+](=O)[O-])C(=O)OCC       :    42.18197:      4.7960:      5.0673:      3.9855: Non-outlier:     -0.2713: 14/253: 72
+#:c1cccc2c1/C(=N\O)/C(=N2)c1c[nH]c2c1cccc2                                                                    :    32.74571:      4.5090:      4.7231:      0.7023: Non-outlier:     -0.2141:  0/109: 31
+#:Cc1ccc(S(=O)(=O)NCCc2c3cc([nH]c3ccc2)C(c2[nH]c3ccccc3c2CCNS(=O)(=O)c2ccc(C)cc2)c2c(cccc2)O)cc1              :    30.28711:      4.1920:      4.6334:      0.7580: Non-outlier:     -0.4414: 32/257: 35
+#:c1cc2c(cc1)c(c([nH]2)C(c1cc2c([nH]1)cccc2CCNS(=O)(=O)c1ccc(cc1)C)c1ccc(cc1)O)CCNS(=O)(=O)c1ccc(cc1)C        :    34.74866:      4.8040:      4.7962:      0.8322: Non-outlier:      0.0078:  3/274: 38
+#:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)C#N)C1=CNC2C1=CC(=CC2)C#N)c1cc(c(c(c1)OC)OC)OC             :    34.10825:      4.7140:      4.7728:      1.2372: Non-outlier:     -0.0588:  4/260: 44
+#:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cccc2)C1=CNC2C1=CC=CC2)c1ccc(cc1)OC                               :    39.82894:      4.8700:      4.9815:      0.8658: Non-outlier:     -0.1115:  1/206: 50
+#:c1ccc2c(c1)c1c([nH]2)c(nc(c1)C(c1c[nH]c2c1cc(cc2)OC)C1=CNC2C1=CC(=CC2)OC)c1ccc(cc1)OC                       :    33.60757:      4.7430:      4.7546:      1.0112: Non-outlier:     -0.0116:  4/230: 56
+#:c1ccc2c(c1)c(cn2Cc1cccc(c1)Cl)CC1CN(CC(C1=O)Cc1cn(c2c1cccc2)Cc1cccc(c1)Cl)C(=O)OCC                          :    41.64876:      5.3750:      5.0478:      0.8133: Non-outlier:      0.3272: 19/243: 71

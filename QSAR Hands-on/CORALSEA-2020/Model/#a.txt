@@ -1,0 +1,58 @@
+This file contains average values for statistical characteristics which were obtained
+in 1 probes of the Monte Carlo optimization
+SMILES taken from file #TrainingSet.txt
+Method taken from file Method.txt
+
+SMILES is used for the model
+Threshold from 4 to 4
+
+n is the number of compounds in set;
+r is Correlation coefficient;
+s is standard error of estimation;
+F is Fischer F-ratio.
+ns, r2s, ss, and Fs are statistical characteristics of Training set.
+nc, r2c, sc, and Fc are statistical characteristics of invisible-Training set.
+nt, r2t, st, and Ft are statistical characteristics of calibration set.
+
+CCC is concordance correlation coefficient [1].
+[1] L. I-Kuei Lin, A Concordance Correlation Coefficient to Evaluate Reproducibility,
+Biometrics, 45(1)(1989) 255-268
+
+Rm2av is the average of Rm2 metric, it should be > 0.5 [2]
+[2] PK Ojha,I Mitra, RN Das,K Roy,Further exploring rm2 metrics for validation of QSPR models,
+Chemometrics and Intelligent Laboratory Systems, 107(1) (2011) 194-205
+
+IIC is the Index of ideality of correlation [3]
+[3]AP Toropova, AA Toropov, The index of ideality of correlation: 
+A criterion of predictability of QSAR models for skin permeability?
+Science of The Total Environment, 586 (2017) 466-472
+
+Number of epochs of optimization is 5
+Number of probes of optimization is 1
+Weight for dr in balance of correlations is 0.1
+Start step of the optimization is 0.5*CW(SA)
+Precision of the optimization is 0.1*CW(SA)
+CW(SA) is weight of SA at the start
+
+N111 is the number of SA which take place in training, 
+in invisible training, and in calibration sets
+W% is ratio of N111/(number of all SA)
+N110 is number of SA which take place in Training and invisible-Training
+N101 is number of SA which take place in Training and calibration
+N100 is number of SA which take place in Training (only)
+
+Model 
+Involves from SMILES:
+S(k)
+SS(k)
+SSS(k)
+NOSP
+HALO
+BOND
+HARD
+Balance of correlations i.e. Training-Invisible training-Calibration system
+The dr-weight is 0.1
+
+
+Trshd:Nact :  ns :         rs2:       ss :    fs :  nc :         rc2:       sc :    fc :  nt :         rt2:       st :    ft :      CCC   :      Rm2av :      IIC   : W% :N111:N110:N101:N100: SplitDefect:NormSpltDef
+    4:  124:   29:      0.4515:     0.211:     22:   29:      0.3052:     0.241:     12:    7:      0.8362:     0.246:     26:      0.4768:      0.4072:      0.4325:  80:  99:  17:   7:   1:    19.27220:    9.94694

@@ -1,0 +1,2 @@
+The evolution of correlations. The R is correlation coefficient; s is standard error
+ No.:R2-sub :R2-clb :R2-tst : s-sub   : s-clb   : s-tst
